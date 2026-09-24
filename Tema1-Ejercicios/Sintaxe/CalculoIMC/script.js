@@ -1,6 +1,8 @@
 // a. Peso y altura de dos personas
-let peso1 = 70, altura1 = 1.75;
-let peso2 = 60, altura2 = 1.65;
+let peso1 = 70;
+let altura1 = 1.75;
+let peso2 = 60;
+let altura2 = 1.65;
 
 // b. Cálculo del IMC
 let imc1 = peso1 / (altura1 * altura1);

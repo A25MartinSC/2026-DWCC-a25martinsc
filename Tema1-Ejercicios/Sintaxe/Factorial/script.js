@@ -1,4 +1,4 @@
-let numero = 5;
+let numero = 0;
 let factorial = 1;
 
 for (let i = numero; i >= 1; i--) {
