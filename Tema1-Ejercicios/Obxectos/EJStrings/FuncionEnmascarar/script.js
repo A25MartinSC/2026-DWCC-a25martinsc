@@ -10,7 +10,7 @@ function Enmascarar(cadena) {
   return cadenaEnmascarada;
 }
 
-console.log(Enmascarar("1234123412347777"));
+console.log(Enmascarar("123782347777"));
 
 
 
