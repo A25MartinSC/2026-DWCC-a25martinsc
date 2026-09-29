@@ -1,37 +1,40 @@
 'use strict'
 
-const day = new Date("June 25, 2026")
-const day1 = day.getDay();
+function diasMes(numAno, numMes) {
 
-switch (day1) {
+  let numDias = 0;
+  switch (numMes) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+      numDias = 31;
+      break;
 
-  case 0:
-    console.log("Domingo");
-    break;
-  case 1:
-    console.log("Lunes");
-    break;
-  case 2:
-    console.log("Martes");
-    break;
-  case 3:
-    console.log("Miercoles");
-    break;
-  case 4:
-    console.log("Jueves");
-    break;
-  case 5:
-    console.log("Viernes");
-    break;
-  case 6:
-    console.log("Sabado");
-    break;
-  default:
-    console.log("Dia no valido");
-    break;
-
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      numDias = 30;
+      break;
+    case 2:
+      if (numAno % 4 == 0) {
+        numDias = 29;
+      } else {
+        numDias = 28;
+      }
+      break;
+    default:
+      console.log("Mes no valido");
+      break;
+  }
+  return numDias;
 }
 
+console.log(diasMes(2024, 2));
 
 
 
