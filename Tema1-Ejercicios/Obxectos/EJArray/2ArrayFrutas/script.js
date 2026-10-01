@@ -1,15 +1,12 @@
 'use strict'
 
-const froitas = ['peras', 'mazás', 'kiwis', 'plátanos', 'mandarinas'];
-
-console.log(froitas.join(', '));
-
+const froitas = ['peras', 'mazas', 'kiwis', 'platanos', 'mandarinas'];
 
 froitas.splice(1, 1);
 console.log(froitas.join(', '));
 
 
-froitas.splice(3, 0, 'laranxas', 'sandía');
+froitas.splice(3, 0, 'laranxas', 'sandia');
 console.log(froitas.join(', '));
 
 

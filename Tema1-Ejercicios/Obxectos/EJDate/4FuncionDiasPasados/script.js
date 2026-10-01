@@ -10,7 +10,7 @@ function diasPasados(fecha) {
 
   return dias;
 }
-console.log(diasPasados('June 27, 2026'));
+console.log(diasPasados('January 27, 2026'));
 
 
 

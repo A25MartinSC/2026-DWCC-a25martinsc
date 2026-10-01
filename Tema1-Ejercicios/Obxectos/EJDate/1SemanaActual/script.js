@@ -1,9 +1,9 @@
 'use strict'
 
 const day = new Date("June 25, 2026")
-const day1 = day.getDay();
+const dixito = day.getDay();
 
-switch (day1) {
+switch (dixito) {
 
   case 0:
     console.log("Domingo");
