@@ -31,9 +31,18 @@ const players = [
 ];
 let [players1, players2] = players;
 
-console.log(players2)
+console.log(players1);
+console.log(players2);
+
+const [gk, ...fieldPlayers] = players1;
+console.log(gk, fieldPlayers);
+
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
 
 
+const players1Final = [...players1, 'Thiago', 'Coutinho', 'Periscic'];
+console.log();
 
 
 
