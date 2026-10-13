@@ -1,18 +1,30 @@
 'strict'
 
 function buscarPatron(texto, patron) {
-  texto1 = texto.toLowerCase();
-  patron1 = patron.toLowerCase();
-  let contador = 0;
 
-  for (let i = 0; i <= texto1.length; i++) {
-    if (texto1.charAt(i) == patron1.charAt(i)) {
-      if (texto1.slice(i, i + patron1.length)) {
-        contador = contador + 1;
+  let indiceTexto;
+  //Contador de cantos encontramos
+  let encontrados = 0;
+
+
+  //Pasamos todo minusculas
+  let textoM = texto.toUpperCase();
+  let patronM = patron.toUpperCase();
+
+
+  for (indiceTexto = 0; indiceTexto < textoM.length; indiceTexto++) {
+    let numeroCoincidencias = 0;
+    for (let indicePatron = 0; indicePatron < patronM.length; indicePatron++) {
+      if (texto[indiceTexto + indicePatron] == patron[indicePatron]) {
+        numeroCoincidencias++;
+      }
+      if (numeroCoincidencias == patron.length) {
+        //Coincidencia encontrada
+        encontrados++;
       }
     }
   }
-  return contador;
+  return encontrados;
 }
 
-console.log(buscarPatron("holanfholaholdsddholaholadijhola", "HOLA")); 
+console.log(buscarPatron("holanfholaholdsddholaholadijhola", "hola")); 
