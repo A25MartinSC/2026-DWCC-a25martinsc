@@ -13,7 +13,7 @@ const persoas = [
 const maioresIdade = persoas.filter((persoas) => persoas.idade >= 18);
 console.log(maioresIdade)
 
-//b. Crea un novo array que conteña os nomes (só os nomes) de todas as persoas.
+//b. Crea un novo array que conteña os nomes (só os nomes) de todas as persoas.0
 
 const soloNombres = persoas.map((persoas) => persoas.nome);
 
