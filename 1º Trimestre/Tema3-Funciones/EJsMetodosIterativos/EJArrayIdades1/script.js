@@ -1,6 +1,6 @@
 'strict'
 
-const persoas = [
+const inventors = [
   { nome: 'aaron', idade: 65, id: 1 },
   { nome: 'beth', idade: 2, id: 2 },
   { nome: 'ánxeles', idade: 13, id: 3 },
@@ -10,14 +10,14 @@ const persoas = [
   { nome: 'navia', idade: 43, id: 7 },
 ];
 //a. Crea un novo array que conteña só as persoas maiores de idade.
-const maioresIdade = persoas.filter((persoas) => persoas.idade >= 18);
+const maioresIdade = inventors.filter((persoas) => persoas.idade >= 18);
 console.log(maioresIdade)
 
 //b. Crea un novo array que conteña os nomes (só os nomes) de todas as persoas.0
 
-const soloNombres = persoas.map((persoas) => persoas.nome);
+const soloNombres = inventors.map((persoas) => persoas.nome);
 
-console.log(soloNombres)
+console.log(nomeCompleto)
 
 
 //c. Crea un novo array que conteña, en maiúsculas, os nomes das persoas maiores de idade.
@@ -28,6 +28,6 @@ console.log(maioresIdadeMaiscula)
 
 //d. Crea un novo array que conteña obxectos só co id e o nome das persoas.
 
-const NomesId = persoas.map((persoas) => [persoas.nome, persoas.id]);
+const NomesId = inventors.map((persoas) => [persoas.nome, persoas.id]);
 
 console.log(NomesId)
