@@ -1,39 +1,24 @@
 'strict'
 
-const dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"];
-
-const diasConM = dias.filter((dias) => dias.startsWith("m"));
-
-console.log(diasConM);
+let paragrafos = document.getElementsByTagName('p');
+console.log(paragrafos);
 
 
-const diasConS = dias.find((dias) => {
-  if (dias.startsWith("s") == true) {
-    console.log("Hay un dia que comeza por S");
-  }
-})
-
-console.log(diasConS);
+let paragrafosDivLipsum = document.querySelectorAll('#lipsum p');
+console.log(paragrafosDivLipsum);
 
 
+let formulario = document.querySelector('form');
+console.log(formulario);
 
 
-const diasTerminaS = dias.every((dias) => dias.endsWith("s"))
-
-console.log(diasTerminaS);
-
+let inputs = document.querySelectorAll('input');
+console.log(inputs);
 
 
+let inputsSexo = document.getElementsByName('sexo');
+console.log(inputsSexo);
 
 
-const diasConMPrimero = dias.find((dias) => dias.startsWith("m"));
-
-console.log(diasConMPrimero);
-
-const posicionConMPrimero = dias.findIndex((dias) => dias.startsWith("m"));
-
-console.log("La posicion del primero que empieza por *m* es " + posicionConMPrimero);
-
-const diasMaiusculas = dias.map((dias) => dias.toUpperCase());
-
-console.log(diasMaiusculas);
+let claseImportant = document.getElementsByClassName('important');
+console.log(claseImportant);

@@ -4,16 +4,15 @@ const tablaEdad = document.getElementById("age-table")
 console.log(tablaEdad);
 
 //● Todos os elementos label dentro da táboa(debería haber 3).
-const elementosLabel = document.querySelectorAll("label")
+const elementosLabel = tablaEdad.querySelectorAll("label")
 console.log(elementosLabel);
 
-
 //● O primeiro td da táboa.
-const primeiroTd = document.querySelector("td")
+const primeiroTd = tablaEdad.querySelector("td")
 console.log(primeiroTd);
 
 //● O formulario con name = "search".
-const formularioBuscar = document.getElementsByName("search")
+const formularioBuscar = document.getElementsByName("search")[0]
 console.log(formularioBuscar);
 
 //● O primeiro input do formulario anterior.
