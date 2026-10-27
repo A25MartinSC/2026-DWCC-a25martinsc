@@ -22,7 +22,8 @@ console.log(elementosLi);
 
 
 //Indica cantos elementos < li > hai.
-
+const numElementosLi = document.querySelectorAll('li');
+console.log(numElementosLi.length);
 
 
 //Indica o valor do atributo data - widget - name
