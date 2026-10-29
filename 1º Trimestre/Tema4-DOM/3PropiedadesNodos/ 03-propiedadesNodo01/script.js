@@ -18,8 +18,9 @@ console.log(inputSeleccionado.value);
 
 //O texto de cada un dos elementos < li >
 const elementosLi = document.querySelectorAll('li');
-console.log(elementosLi);
-
+for (const texto of elementosLi) {
+  console.log(texto.innerText);
+}
 
 //Indica cantos elementos < li > hai.
 const numElementosLi = document.querySelectorAll('li');
@@ -27,5 +28,5 @@ console.log(numElementosLi.length);
 
 
 //Indica o valor do atributo data - widget - name
-const divWidget = document.querySelector('[data-widget-name]');
-console.log(divWidget.dataset.widgetName);
+const valorAtributo = document.querySelector('[data-widget-name]');
+console.log(valorAtributo.dataset.widgetName);

@@ -7,4 +7,4 @@ c. elemento.textContent = text;
  */
 
 
-/*Fan o mesmo os elementos A e B, coa unic diferenci de que a B e mais segura e mitiga o risco de ataques.*/
+/*Fan o mesmo o A e C, xa que cren un nodo de texto en vez de un elemento. */

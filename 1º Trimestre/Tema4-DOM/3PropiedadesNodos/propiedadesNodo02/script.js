@@ -22,6 +22,7 @@ const ligazonsTerceiroParagrafo = paragrafos[2].querySelectorAll('a');
 console.log(ligazonsTerceiroParagrafo.length);
 
 //Modifica o estilo das ligazóns que apuntan a http://proba para que teñan o texto de cor laranxa.
-ligazonsProba.forEach(ligazon => {
-    ligazon.style.color = "orange";
-});
+
+for (const link of ligazonsProba) {
+    link.style.color = "orange";
+}
