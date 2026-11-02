@@ -2,17 +2,14 @@
 
 const textoOculto = document.getElementById("adicional")
 
-textoOculto.style.visibility = "hidden";
+textoOculto.style.display = "none";
 
 const link = document.querySelector("a");
 
 function quitarOculto() {
 
-  textoOculto.style.visibility = "visible";
-  link.style.visibility = "hidden";
+  textoOculto.style.display = "flex";
+  link.style.display = "none";
 }
-
-
-
 
 link.addEventListener('click', quitarOculto);
