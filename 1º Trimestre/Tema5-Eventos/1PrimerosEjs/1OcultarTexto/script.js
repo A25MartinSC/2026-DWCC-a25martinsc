@@ -8,7 +8,7 @@ const link = document.querySelector("a");
 
 function quitarOculto() {
 
-  textoOculto.style.display = "flex";
+  textoOculto.style.display = "";
   link.style.display = "none";
 }
 
