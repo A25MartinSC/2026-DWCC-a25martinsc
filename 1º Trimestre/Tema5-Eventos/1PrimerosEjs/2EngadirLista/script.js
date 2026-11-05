@@ -5,9 +5,13 @@ const btn = document.querySelector('button');
 const lista = document.querySelector('ul');
 
 function añadir() {
-  let li = document.createElement('li');
-  lista.append(li);
-  li.append(texto.value);
+  if (texto.value != 0) {
+    let li = document.createElement('li');
+    lista.append(li);
+    li.append(texto.value);
+  }
 }
+texto.value = "";
+texto.focus();
 
 btn.addEventListener('click', añadir);
