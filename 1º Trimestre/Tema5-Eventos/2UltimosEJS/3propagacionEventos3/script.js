@@ -1,11 +1,19 @@
 "use strict"
 
-const lista = document.getElementsByClassName("tree")
+const arbol = document.getElementById("tree");
 
+function ocultar(event) {
+    const elemento = event.target;
 
-function ocultar() {
+    const hijos = elemento.querySelector("ul");
 
+    if (hijos !== null) {
+        if (hijos.style.display === "none") {
+            hijos.style.display = "";
+        } else {
+            hijos.style.display = "none";
+        }
+    }
 }
 
-
-ul.addEventListener("click", ocultar)
+arbol.addEventListener("click", ocultar);
