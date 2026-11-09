@@ -2,10 +2,11 @@
 
 const botones = document.querySelectorAll("button");
 
-const contenedor = document.getElementById("container")
+for (const botonActual of botones) {
+  function borrarTexto() {
+    let anteriorP = botonActual.previousElementSibling;
 
-function borrarTexto() {
-
+    anteriorP.style.display = "none";
+  }
+  botonActual.addEventListener("click", borrarTexto)
 }
-
-contenedor.addEventListener("click", borrarTexto)
