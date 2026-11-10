@@ -15,11 +15,7 @@ const botonClase = document.getElementById("btnAlternar");
 const mensaxe = document.getElementById("mensaxe");
 
 function quitarClase() {
-  if (mensaxe.classList != "resaltado") {
-    mensaxe.classList.add("resaltado");
-  } else {
-    mensaxe.classList.remove("resaltado");
-  }
+  mensaxe.classList.toggle("resaltado")
 }
 
 botonClase.addEventListener("click", quitarClase);

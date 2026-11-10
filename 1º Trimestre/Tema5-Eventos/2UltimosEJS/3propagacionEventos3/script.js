@@ -2,6 +2,7 @@
 
 const arbol = document.getElementById("tree");
 
+
 function ocultar(event) {
     const elemento = event.target;
 
