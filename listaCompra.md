@@ -1,0 +1,2 @@
+- Coger todos los elementos del formulario que se necesitan
+- 
