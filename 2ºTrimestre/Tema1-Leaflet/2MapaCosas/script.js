@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 import {
   LeafletMap,
@@ -20,3 +20,15 @@ new TileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution:
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
+
+const form = document.getElementById('form');
+const input = document.getElementById('descripcion');
+
+let puntoPulsado;
+
+map.on('click', (e) => {
+  puntoPulsado = e.latlng;
+  form.hidden = false;
+  input.focus();
+});
+

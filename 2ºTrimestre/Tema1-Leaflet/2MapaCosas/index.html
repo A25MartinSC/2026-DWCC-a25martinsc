@@ -15,29 +15,40 @@
   </script>
   <style>
     html,
-    body,
-    #map {
+    body {
       height: 100%;
-      width: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
     }
 
     #lateral {
       width: 20%;
-      padding: auto;
-      background-color: blueviolet;
+      padding: 10px;
+      box-sizing: border-box;
+      background-color: rgb(222, 255, 244);
     }
 
     #map {
       width: 80%;
+      height: 100%;
     }
   </style>
 </head>
 
 <body>
-  <div id="lateral"></div>
+  <div id="lateral">
+    <form id="form" hidden>
+      <input id="descripcion" placeholder="Descripción" required>
+    </form>
+    <ul id="lista"></ul>
+  </div>
+
   <div id="map"></div>
 
-  <script type="module" src="script.js" defer></script>
+  <script type="module" src="script.js"></script>
 </body>
 
 </html>
