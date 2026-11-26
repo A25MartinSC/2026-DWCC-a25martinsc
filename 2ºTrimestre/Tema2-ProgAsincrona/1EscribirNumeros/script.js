@@ -12,16 +12,16 @@ function escribirNumeros(desde, ata) {
     if (desde <= ata) {
       console.log(desde);
       desde = desde + 1;
+    } else {
+
+
+      clearInterval(intervalID);
+
     }
   }, 1000);
-
-  setTimeout(() => {
-    clearInterval(intervalID);
-  }, 10000)
-
 }
 
-escribirNumeros(1, 10)
+escribirNumeros(1, 5)
 
 
 
